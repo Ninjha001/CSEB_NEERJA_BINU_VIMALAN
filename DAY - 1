@@ -152,5 +152,6 @@ Q5. String validity prgm
         return 0;
       }
       
-Q6.
+//ASSIGNMENT QUESTION : FIND OUT THE LOGIC FOR HAPPY NUMBER.
+A happy number is a number for which the sum of the squares of the digits produce 1. If it produces 4, then it is an unhappy number.
    
