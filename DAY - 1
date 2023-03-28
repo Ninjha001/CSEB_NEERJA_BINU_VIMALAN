@@ -1,2 +1,156 @@
-Get three sides of a triangle as input and find out whether we can frame a triangle or not?
+Q1.Get three sides of a triangle as input and find out whether we can frame a triangle or not?
 
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+  int a,b,c;
+  printf("Enter the sides of the triangle\n");
+  scanf("%d%d%d",&a,&b,&c);
+  if(a+b>c || b+c>a || a+c>b)
+    printf("Cannot frame a triangle\n");
+  else
+    printf("Can frame a triangle");
+}
+
+Q2.Sam is having 75 candies, half of which he gave to his close friend Anggel. Now, anel loves sama lot so she ave half back to Sam. How much sam has and how much Angel has?
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+  float a = 75;
+  a = 75/4;
+  printf("Angel has %f chocolates\n",a);
+  a = a*3;
+  printf("Sam has %f chocolates\n",a);
+}
+
+Q3.Output of the following code snippets
+(a)
+    #include<stdio.h>
+
+    int main()
+    {
+      char str[25];
+      printf("%d",printf("cse students rocks"));
+      return 0;
+    }
+    //cse students rocks18
+
+(b)
+    #include<stdio.h>
+    
+    int main()
+    {
+      int a = 3;
+      printf("%d");
+      return 0;
+    }
+    //warning is produced. But still produces a garbage value as the result.
+    
+(c)
+    #include<stdio.h>
+    
+    int main()
+    {
+      int a,b;
+      printf("%d",scanf("%d%d",&a,&b));
+      return 0;
+    }
+    //prints the number of variables inside the scanf().Here it is 2.
+
+(d)
+    #include<stdio.h>
+    
+    int main()
+    {
+      char *ptr = "Kollam Beach";
+      printf(ptr+3);
+      return 0;
+    }
+    //lam Beach is the output.
+    
+(e)
+    #include<stdio.h>
+    
+    int main()
+    {
+      int a=1;
+      printf("%d%p",a,a);
+      return 0;
+    }
+    //32 bit o/p : 1 000000001
+    //64 bit o/p : 1 0x1
+    
+(f)
+    #include<stdio.h>
+    #include<stdlib.h>
+
+    void main()
+    {
+        int n=5;
+        int i=0,s=0;
+        int p,r;
+        int sample(int n)
+        {
+            while(n>0)
+            {
+                r = n%10;
+                p = 8^i; // bitwise OR
+                s = s + p*r;
+                i = i+1;
+                n = n/10;
+            }
+            return s;
+            //return p;
+        }
+    r = sample(n);
+    printf("%d",r);
+    }
+    //Output value is 40.
+    
+Q4.Write a prgm to find out given no is perfect or not 
+ 
+    #include<stdio.h>
+    
+    int main()
+    {
+      int i,n,sum=1;
+      printf("Enter the number\t");
+      scanf("%d",&n);
+      for(i=2;i<=n/2;i++)
+      {
+        if(n%i==0)
+          sum+=i;
+      }
+      if(n==sum)
+        printf("%d is a perfect number",n);
+      else
+        printf("%d is not a perfect number",n);
+      return 0;
+    }
+
+Q5. String validity prgm
+
+      #include<stdio.h>
+
+      int main()
+      {
+        char str[10] = {'#','#','*','*','#','#','#','#'};
+        int i,x=0;
+        for(i=0;i<10;i++)
+        {
+          if(str[i]=='#')                                      // # > * - +ve || # < * - -ve || # = * - 0
+            x++;
+          else if(str[i]=='*')
+            x--;
+        }
+        printf("%d\n",x);
+        return 0;
+      }
+      
+Q6.
+   
