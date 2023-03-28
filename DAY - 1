@@ -14,7 +14,7 @@ int main()
     printf("Can frame a triangle");
 }
 
-Q2.Sam is having 75 candies, half of which he gave to his close friend Anggel. Now, anel loves sama lot so she ave half back to Sam. How much sam has and how much Angel has?
+Q2.Sam is having 75 candies, half of which he gave to his close friend Angel. Now, anel loves sama lot so she ave half back to Sam. How much sam has and how much Angel has?
 
 #include<stdio.h>
 #include<stdlib.h>
